@@ -1,32 +1,22 @@
 
 
-#pull a base image that gives all required tools and libraries
+# Pull base image
 FROM node:20-alpine
 
-# create a folder where he app code will be stored
+# Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json first
-#COPY package*.json ./
-
-# Log Node version to verify during build
-#RUN node -v && npm -v
-
-# Clean npm cache and install dependencies
-#RUN npm cache clean --force && npm install
-
-#Copy the source code from your HOST machine to your container 
+# Copy app source code
 COPY . .
 
-#install npm file 
+# Install dependencies
 RUN npm install
 
-# given Expose port and this given by developer
+# Expose the port used by Vite
 EXPOSE 3000
 
-
-# run the application
-CMD ["npm", "run","dev"]
+# Run the development server
+CMD ["npm", "run", "dev"]
 
 
 
