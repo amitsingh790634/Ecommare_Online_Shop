@@ -1,5 +1,7 @@
-# 🛍️ Online Shop – Vite + React + Docker 🐳
+<img width="1470" alt="Project ss" src="https://github.com/user-attachments/assets/11350cf1-a03c-4021-8dad-3149f2947b09" />
 
+
+# 🛍️ Online Shop – Vite + React + Docker 🐳
 This project is a **React.js** application bundled with **Vite** and containerized using **Docker**. It showcases an online shop built with modern web technologies, optimized for development and deployment.
 
 ---
